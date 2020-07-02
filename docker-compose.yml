@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  machine:
+    build:
+      dockerfile: .docker/machine/Dockerfile
+      context: ./
+    volumes:
+      - ./src:/app
